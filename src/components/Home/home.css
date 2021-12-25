@@ -2,3 +2,18 @@
     width: 300px;
     height: 280px;
 }
+
+.home-block{
+    text-align: center;
+    margin: 0 auto;
+    width: 666px;
+    background-color: rgb(44, 40, 40);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.description{
+    margin-top: 150px;
+    margin-right: 60px;
+}

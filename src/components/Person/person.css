@@ -1,0 +1,9 @@
+.person-block {
+    background-color: rgb(44, 40, 40);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: coral;
+    margin-top: 50px;
+    margin-left: 50px;
+}

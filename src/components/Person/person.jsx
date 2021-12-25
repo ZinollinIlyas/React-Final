@@ -1,5 +1,6 @@
 import {React, useState, useEffect} from "react";
 import { useParams } from "react-router";
+require('./person.css');
 
 const Person = () => {
     const {personId} = useParams()
@@ -29,8 +30,8 @@ const Person = () => {
 
 
     return(
-        <div>
-            <img src={require(`../../../public/media/${personId}.jpeg`)} alt="" />
+        <div className="person-block">
+            <img className="home-image" src={require(`../../../public/media/${personId}.jpeg`)} alt="" />
             <h1>{person.name}</h1>
             <p>Height: {person.height}</p>
             <p>Mass: {person.mass}</p>

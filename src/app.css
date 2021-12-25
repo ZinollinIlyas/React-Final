@@ -1,0 +1,6 @@
+body{
+    background: url('../public/media/background.png') center center / cover no-repeat;
+    min-height: 800px;
+    color: white;
+    margin: 0;
+}

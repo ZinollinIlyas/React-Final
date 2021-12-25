@@ -1,0 +1,30 @@
+nav{
+    background-color: #0D1F24;
+    width: 100%;
+    padding: 20px 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+};
+
+.nav-link{
+    text-decoration: none;
+}
+
+.nav-link p{
+    color: coral;
+}
+
+.nav-link p:hover{
+    color: green;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-block{
+    width: 250px;
+    margin-top: 20px;
+    margin-right: 50px;
+}

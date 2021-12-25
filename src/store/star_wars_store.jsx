@@ -1,6 +1,6 @@
 import { createStore } from "redux";
 
-const starWarsReducer = (state = 2, action) => {
+const starWarsReducer = (state = 11, action) => {
     switch(action.type){
         case 'INC':
             return state + 1;

@@ -1,5 +1,6 @@
 import {React, useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
+require('./planet.css');
 
 
 const Planet = () => {
@@ -11,10 +12,11 @@ const Planet = () => {
         .then(res => res.json())
         .then(data => setPlanet(data));
 
-    }, )
+    }, [planetId])
 
     return(
-        <div>
+        <div className="planet-block">
+            <img className="home-image" src={require(`../../../public/planets/${planetId}.jpeg`)} alt="" />
             <h3>{planet.name}</h3>
             <p>Rotation Period: {planet.rotation_period}</p>
             <p>Orbital Period: {planet.orbital_period}</p>

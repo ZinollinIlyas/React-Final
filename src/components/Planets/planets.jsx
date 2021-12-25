@@ -1,6 +1,7 @@
 import {React, useState, useEffect} from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+require('./planets.css')
 
 
 const Planets = () => {
@@ -23,12 +24,16 @@ const Planets = () => {
 
 
     return(
-        <div>
-            {planets.map(planet => (
-                <Link key={extractId(planet)} to={extractId(planet)}>
-                    <h3>{planet.name}</h3>
-                </Link>
-            ))}
+        <div className="flex-between">
+            <div>
+                {planets.map(planet => (
+                    <Link key={extractId(planet)} to={extractId(planet)}>
+                        <div className="planet-links">
+                            <h5 className="planet-link">{planet.name}</h5>
+                        </div>
+                    </Link>
+                ))}
+            </div>
             <div>
                 <Outlet/>
             </div>
